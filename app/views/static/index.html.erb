@@ -1,0 +1,11 @@
+<h1>Gossips</h1>
+<ul>
+  <% @gossips.each_with_index do |gossip, index| %>
+    <li><%="#{index+1}/ #{gossip.content} - #{gossip.author}" %></li>
+    <br>
+  <% end %>
+</ul>
+
+<footer>
+<a href="/contact">Talk to us !<a>
+<a href="team"> Learn about us !<a>
